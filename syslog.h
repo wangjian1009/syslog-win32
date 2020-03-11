@@ -180,7 +180,7 @@ extern int setlogmask (int __mask);
 extern void syslog (int __pri, const char *__fmt, ...);
 
 /* Generate a log message using FMT and using arguments pointed to by AP.  */
-extern void vsyslog (int __pri, char *__fmt, va_list __ap);
+extern void vsyslog (int __pri, const char *__fmt, va_list __ap);
 
 #ifdef _WIN32
     /* Windows specific.
